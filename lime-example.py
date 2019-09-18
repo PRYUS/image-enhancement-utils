@@ -46,4 +46,3 @@ for name in os.listdir(path):
     # cv2.imshow('new_image_ws3', img_ws3)
     # cv2.imshow('new_image_ws4', img_ws4)
 
-cv2.waitKey()
