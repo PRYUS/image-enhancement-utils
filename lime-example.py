@@ -15,7 +15,7 @@ from algorithms import lime
 file_path= 'D:/FPGA/python-lime-image-enhancement/images/test-img.jpg'
 #file_path = sys.argv[1]
 
-path = '/content/drive/My Drive/bddsample/'
+path = '/content/drive/My Drive/night_images/'
 
 result_path1 = '/content/drive/My Drive/night_images_results_ws1/'
 result_path2 = '/content/drive/My Drive/night_images_results_ws2/'
