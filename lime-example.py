@@ -17,7 +17,10 @@ file_path= 'D:/FPGA/python-lime-image-enhancement/images/test-img.jpg'
 
 path = '/content/drive/My Drive/night_images/'
 
-result_path = '/content/drive/My Drive/night_images_results/'
+result_path1 = '/content/drive/My Drive/night_images_results_ws1/'
+result_path2 = '/content/drive/My Drive/night_images_results_ws2/'
+result_path3 = '/content/drive/My Drive/night_images_results_ws3/'
+result_path4 = '/content/drive/My Drive/night_images_results_ws4/'
 
 for name in os.listdir(path):
     print(name)
@@ -35,10 +38,10 @@ for name in os.listdir(path):
     img_ws3 = lime.lime(raw_image, weight_strategy=3)
     img_ws4 = lime.lime(raw_image, weight_strategy=4)
 
-    cv2.imwrite(result_path + 'ws1/' + '%s_ws1.jpg' % file_name, img_ws1)
-    cv2.imwrite(result_path + 'ws2/' + '%s_ws2.jpg' % file_name, img_ws2)
-    cv2.imwrite(result_path + 'ws3/' + '%s_ws3.jpg' % file_name, img_ws3)
-    cv2.imwrite(result_path + 'ws4/' + '%s_ws4.jpg' % file_name, img_ws4)
+    cv2.imwrite(result_path1 + '%s_ws1.jpg' % file_name, img_ws1)
+    cv2.imwrite(result_path2 + '%s_ws2.jpg' % file_name, img_ws2)
+    cv2.imwrite(result_path3 + '%s_ws3.jpg' % file_name, img_ws3)
+    cv2.imwrite(result_path4 + '%s_ws4.jpg' % file_name, img_ws4)
 
     # cv2.imshow('raw_image', raw_image)
     # cv2.imshow('new_image_ws1', img_ws1)
