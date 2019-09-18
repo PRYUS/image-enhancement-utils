@@ -29,7 +29,7 @@ for name in os.listdir(path):
     # raw_image = cv2.imread(file_path)
 
     raw_image = cv2.imread(path + name)
-    print(raw_image)
+    #print(raw_image)
     img_ws1 = lime.lime(raw_image, weight_strategy=1)
     img_ws2 = lime.lime(raw_image, weight_strategy=2)
     img_ws3 = lime.lime(raw_image, weight_strategy=3)
