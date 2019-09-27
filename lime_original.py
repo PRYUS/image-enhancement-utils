@@ -12,15 +12,15 @@ import os
 
 from algorithms import lime
 
-#file_path= '/content/'
-file_path = sys.argv[1]
+file_path= '/content/b1ee702d-4a193906.jpg'
+#file_path = sys.argv[1]
 file_name = os.path.split(file_path)[1]
 raw_image = cv2.imread(file_path)
 
 img_ws1 = lime.lime(raw_image, weight_strategy=1)
-img_ws2 = lime.lime(raw_image, weight_strategy=2)
-img_ws3 = lime.lime(raw_image, weight_strategy=3)
-img_ws4 = lime.lime(raw_image, weight_strategy=4)
+#img_ws2 = lime.lime(raw_image, weight_strategy=2)
+#img_ws3 = lime.lime(raw_image, weight_strategy=3)
+#img_ws4 = lime.lime(raw_image, weight_strategy=4)
 
 cv2.imwrite('./%s_ws1.jpg' % file_name, img_ws1)
 cv2.imwrite('./%s_ws2.jpg' % file_name, img_ws2)
